@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #230223, #0f2d1e, #000);
+}
+.container .navbar{
+    display: flex;
+    height: 15vh;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.navbar .navlist{
+    display: flex;
+    gap: 3rem;
+}
+.navlist li{
+    list-style: none;
+} 
+.navlist a{
+    color: white;
+    text-decoration-line: none;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    position: relative;
+}
+.navlist a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    transition: 0.5s linear;
+}
+.navlist a:hover:before{
+    width: 100%;
+}
+.navbar button{
+    background-color: indianred;
+    border: none;
+    font-size: 1rem;
+    padding: .9rem 1.5rem;
+    color: white;
+    letter-spacing: .05rem;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.navbar button:hover{
+    background-color: transparent;
+    border:1px solid indianred;
+}
+.main_content{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 15vh);
+    width: 90%;
+    margin: auto;
+    gap: 4rem;
+}
+.image img{
+    height: 27rem;
+}
+.content h1{
+   color: #fff;
+   font-size: 3rem;
+   line-height: 3.5rem;
+}
+.content h1 span{
+    color: indianred;
+}
+.content p{
+    color: white;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.5rem;
+}
+.main_content button{
+    background-color: transparent;
+    border: .1rem solid indianred;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    color: white;
+    letter-spacing: .05rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.main_content button:hover{
+    background-color: transparent;
+    border:2px solid indianred;
+}
+.features{
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.individual h3{
+    color: white;
+}
+.features .individual{
+    border-left: .3rem solid indianred;
+    padding: .3rem 1rem;
+}
+.individual:nth-child(1) , .individual:nth-child(3){
+    margin-left: 4rem;
+}
